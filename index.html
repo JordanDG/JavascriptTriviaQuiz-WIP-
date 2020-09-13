@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Title -->
+    <title>Trivia Quiz 2020</title>
+    <!-- Import Tags -->
+    <meta charset="UTF-8">
+    <meta name="description" content="The portfolio page for Jordan Da Graca">
+    <meta name="keywords" content="Portfolio, JDG, Jordan Da Graca, Web Developer, HTML, CSS, Javascript, Resume">
+    <meta name="author" content="Jordan Da Graca">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS & JS -->
+    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body onload="refresh()">
+    <header>
+        <div class="header_container" id="header_container">
+            <h1>Trivia Quiz</h1>
+            <p id="header_text1">Welcome to the Trivia Quiz 2020!</p>
+            <p id="header_text2">The aim of the game is to get as many questions correct as possible!<br> The topics range from film to geography, so good luck!</p>
+            <div class="header_settings" id="header_settings">
+                <input type="checkbox" checked id="checkbox" onchange="TimeToggle(this)">
+                <label for="TimeToggle">Time Limit</label><br>
+                <input type="number" name="Timer" placeholder="Seconds" id="header_input">
+                <label for="players" class="players_label">Players (1-5)</label>
+                <input type="number" name="Timer" placeholder="Players" id="player_count">
+            </div>
+            <button onclick="StartGame(this)" id="header_button">Start</button>
+            <div class="player_container" id="player_container">
+                <div class="player_details_infobox first" id="player_details1">
+                    <h2 id="player_header1">Player Details:</h2>
+                    <label class="player_name_label">Name: </label>
+                    <input type="text" class="player_name" name="player_name1" id="player_name1">
+                    <label class="player_age_label">Age: </label>
+                    <input type="number" class="player_age" name="player_age1" id="player_age1">
+                    <label class="player_quote_label">Quote: </label>
+                    <input type="text" class="player_quote" name="player_quote1" id="player_quote1">
+                    <button class="player_button" onclick="DetailReady1()" id="player_button1">Ready</button>
+                </div>
+                <div class="player_details_infobox" id="player_details2">
+                    <h2 id="player_header2">Player Details:</h2>
+                    <label class="player_name_label">Name: </label>
+                    <input type="text" class="player_name" name="player_name2" id="player_name2">
+                    <label class="player_age_label">Age: </label>
+                    <input type="number" class="player_age" name="player_age2" id="player_age2">
+                    <label class="player_quote_label">Quote: </label>
+                    <input type="text" class="player_quote" name="player_quote2" id="player_quote2">
+                    <button class="player_button" onclick="DetailReady2()" id="player_button2">Ready</button>
+                </div>
+                <div class="player_details_infobox" id="player_details3">
+                    <h2 id="player_header3">Player Details:</h2>
+                    <label class="player_name_label">Name: </label>
+                    <input type="text" class="player_name" name="player_name3" id="player_name3">
+                    <label class="player_age_label">Age: </label>
+                    <input type="number" class="player_age" name="player_age3" id="player_age3">
+                    <label class="player_quote_label">Quote: </label>
+                    <input type="text" class="player_quote" name="player_quote3" id="player_quote3">
+                    <button class="player_button" onclick="DetailReady3()" id="player_button3">Ready</button>
+                </div>
+                <div class="player_details_infobox" id="player_details4">
+                    <h2 id="player_header4">Player Details:</h2>
+                    <label class="player_name_label">Name: </label>
+                    <input type="text" class="player_name" name="player_name4" id="player_name4">
+                    <label class="player_age_label">Age: </label>
+                    <input type="number" class="player_age" name="player_age4" id="player_age4">
+                    <label class="player_quote_label">Quote: </label>
+                    <input type="text" class="player_quote" name="player_quote4" id="player_quote4">
+                    <button class="player_button" onclick="DetailReady4()" id="player_button4">Ready</button>
+                </div>
+                <div class="player_details_infobox" id="player_details5">
+                    <h2 id="player_header5">Player Details:</h2>
+                    <label class="player_name_label">Name: </label>
+                    <input type="text" class="player_name" name="player_name5" id="player_name5">
+                    <label class="player_age_label">Age: </label>
+                    <input type="number" class="player_age" name="player_age5" id="player_age5">
+                    <label class="player_quote_label">Quote: </label>
+                    <input type="text" class="player_quote" name="player_quote5" id="player_quote5">
+                    <button class="player_button" onclick="DetailReady5()" id="player_button5">Ready</button>
+                </div>
+                <button class="StartGame" id="StartGame" onclick="BeginGame()">Begin Game</button>
+            </div>
+        </div>
+    </header>
+</body>
+
+</html>
